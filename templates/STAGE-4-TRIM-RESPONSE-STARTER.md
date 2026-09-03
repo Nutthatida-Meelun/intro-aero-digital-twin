@@ -111,14 +111,14 @@ Use the assigned class values or values approved by your instructor. Show the su
 
 ```text
 Inputs:
-Cm0 = [COMPLETE]
-Cm_alpha = [COMPLETE] 1/rad
-alpha = [COMPLETE] deg
-delta_alpha = [COMPLETE] deg
+Cm0 = 0.04
+Cm_alpha = -0.8 1/rad
+alpha = 2.86 deg
+delta_alpha = +2.00 deg
 
 Angle conversion:
-alpha_rad = [SHOW WORK]
-delta_alpha_rad = [SHOW WORK]
+alpha_rad = 2.86 * pi / 180 = 0.0499164166 rad 
+delta_alpha_rad = +2.00 * pi / 180 = 0.0349065850
 
 Current pitching-moment coefficient:
 Cm(alpha) = [SHOW WORK]
