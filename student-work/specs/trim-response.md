@@ -147,8 +147,8 @@ Use your Section 8 reference calculation.
 Input: Cm0 = 0.05, Cm_alpha = -0.86 rad^-1, disturbanceAlphaDeg = 2.0 deg
 delta_alpha_rad = 2.0 * pi / 180 = 0.0349066
 alpha_trim_rad = -Cm0 / Cm_alpha = -0.05 / (-0.86) = 0.0581395
-alpha_trim_deg = 0.3313 deg
-delta_Cm = Cm_alpha * delta_alpha_rad = (-0.86) * 0.349066 = -0.030020
+alpha_trim_deg = 3.3311 deg
+delta_Cm = Cm_alpha * delta_alpha_rad = (-0.86) * 0.0349066 = -0.030020
 ```
 
 ### 9.2 Behavioral case
@@ -156,7 +156,7 @@ delta_Cm = Cm_alpha * delta_alpha_rad = (-0.86) * 0.349066 = -0.030020
 Change one input and state the exact trend or sign that must result.
 
 ```text
-If the magnitude of Cm_alpha is doubles (from -0.86 rad^-1 to -1.72 rad^-1, alpha_trim magnitude decreases from 3.3313 deg to 1.6657 deg.
+If the magnitude of Cm_alpha is doubles (from -0.86 rad^-1 to -1.72 rad^-1, alpha_trim magnitude decreases from 3.3311 deg to 1.6656 deg.
 ```
 
 ### 9.3 Boundary or sanity case
