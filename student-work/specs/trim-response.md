@@ -344,3 +344,4 @@ Contract rules:
 ## Required response format
 
 Before approval, return only the engineering interpretation and no code. After approval, briefly state that the approved interpretation is being implemented, then provide the complete contents of the three files in separately labeled code blocks. If missing or conflicting information becomes apparent, stop and return a revised interpretation for approval instead of inventing a model.
+
