@@ -1,6 +1,6 @@
 # Stage 4 Starter Specification: Live Cm–Alpha Relationship and Trim
 
-Student name: `[YOUR NAME]`
+Student name: `Nutthatida Meelun`
 
 Complete only the boxes marked **STUDENT COMPLETES**. The instructor-provided engineering scope and the implementation contract must not be edited. When the specification is complete and approved, attach this one file to ChatGPT.
 
@@ -144,7 +144,11 @@ Define all three cases before implementation. Include exact inputs, expected out
 Use your Section 8 reference calculation.
 
 ```text
-[COMPLETE]
+Input: Cm0 = 0.05, Cm_alpha = -0.86 rad^-1, disturbanceAlphaDeg = 2.0 deg
+delta_alpha_rad = 2.0 * pi / 180 = 0.0349066
+alpha_trim_rad = -Cm0 / Cm_alpha = -0.05 / (-0.86) = 0.0581395
+alpha_trim_deg = 0.3313 deg
+delta_Cm = Cm_alpha * delta_alpha_rad = (-0.86) * 0.349066 = -0.030020
 ```
 
 ### 9.2 Behavioral case
@@ -152,7 +156,7 @@ Use your Section 8 reference calculation.
 Change one input and state the exact trend or sign that must result.
 
 ```text
-[COMPLETE]
+If the magnitude of Cm_alpha is doubles (from -0.86 rad^-1 to -1.72 rad^-1, alpha_trim magnitude decreases from 3.3313 deg to 1.6657 deg.
 ```
 
 ### 9.3 Boundary or sanity case
@@ -160,7 +164,7 @@ Change one input and state the exact trend or sign that must result.
 Use an informative boundary such as zero slope, zero disturbance, or the trim condition. State the exact behavior expected and why division by zero or a false physical claim must not occur.
 
 ```text
-[COMPLETE]
+When Cm_alpha = 0 , the system loses pitch stiffness, so alpha_trim (-Cm0 / Cm_alpha) becomes undefined due to division by zero. To prevent physical errors, the simulator must detect zero-stiffness and report the trim angle as "not available" than performing division by zero.
 ```
 
 ## 10. Feature Requirements
@@ -196,7 +200,7 @@ Do not modify any existing file.
 In one or two sentences, state what decision the completed feature will support and what it cannot establish.
 
 ```text
-[COMPLETE]
+This feature supports initial prelimitary decisions regarding longitudinal static stability and equilibrium trim angle for fixed daseline configurations. It cannot establish real-world handling qualities, safety, or airworthiness, since the linear model does not hold at stall or large angles of attack
 ```
 
 ---
